@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="650.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.govoyage.GUI.FXMLDocumentController">
+    <children>
+        <Label fx:id="label" layoutX="126" layoutY="120" minHeight="16" minWidth="69" />
+      <Button layoutX="36.0" layoutY="14.0" mnemonicParsing="false" onAction="#AddI" prefHeight="104.0" prefWidth="99.0" styleClass="ipad-dark-grey" stylesheets="@Css/test.css" text="Ajouter">
+         <font>
+            <Font size="50.0" />
+         </font>
+      </Button>
+      <Button layoutX="195.0" layoutY="42.0" mnemonicParsing="false" onAction="#ShowI" prefHeight="69.0" prefWidth="91.0" styleClass="ipad-dark-grey" stylesheets="@Css/test.css" text="Consulter">
+         <font>
+            <Font size="43.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="300.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Uploads/animation.gif" />
+         </image>
+      </ImageView>
+      <Button layoutX="47.0" layoutY="261.0" mnemonicParsing="false" onAction="#AddImage" styleClass="ipad-grey" stylesheets="@Css/test.css" text="Button" />
+      <ImageView fx:id="iv1" fitHeight="358.0" fitWidth="395.0" layoutX="269.0" layoutY="186.0" pickOnBounds="true" preserveRatio="true" />
+      <DatePicker fx:id="d1" layoutX="359.0" layoutY="393.0" />
+      <TextField fx:id="l1" layoutX="52.0" layoutY="393.0" />
+      <TextField fx:id="l2" layoutX="47.0" layoutY="459.0" />
+      <Button layoutX="74.0" layoutY="500.0" mnemonicParsing="false" onAction="#login" text="Button" />
+    </children>
+</AnchorPane>

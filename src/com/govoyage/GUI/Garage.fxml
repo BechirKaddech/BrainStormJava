@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="397.0" prefWidth="1725.0" styleClass="fonddasho" stylesheets="@../CSS/Dash.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.govoyage.GUI.GarageController">
+   <children>
+      <TitledPane animated="false" layoutX="310.0" layoutY="55.0" prefHeight="308.0" prefWidth="491.0" text="données">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="409.0">
+               <children>
+                  <TextField fx:id="nomGarage" layoutX="148.0" layoutY="21.0" />
+                  <TextField fx:id="capaciteGarage" layoutX="148.0" layoutY="81.0" />
+                  <Label layoutX="18.0" layoutY="26.0" text="Nom garage" />
+                  <Label layoutX="18.0" layoutY="81.0" text="Capacité" />
+                  <TextField fx:id="emplacement" layoutX="148.0" layoutY="137.0" />
+                  <Label layoutX="18.0" layoutY="142.0" text="Emplacement" />
+               </children>
+            </AnchorPane>
+        </content>
+      </TitledPane>
+      <TitledPane animated="false" layoutX="26.0" layoutY="55.0" prefHeight="315.0" prefWidth="202.0" styleClass="trans" text="Commandes">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="315.0" prefWidth="200.0">
+               <children>
+                  <Button layoutX="28.0" layoutY="24.0" mnemonicParsing="false" onAction="#AjouterGarage" prefHeight="31.0" prefWidth="141.0" styleClass="ajouter" text="Ajouter" />
+                  <Button layoutX="28.0" layoutY="75.0" mnemonicParsing="false" onAction="#modifierGarage" prefHeight="31.0" prefWidth="142.0" styleClass="ajouter" text="Modifier" />
+                  <Button layoutX="28.0" layoutY="125.0" mnemonicParsing="false" onAction="#SupprimerGarage" prefHeight="31.0" prefWidth="141.0" styleClass="ajouter" text="Supprimer" />
+                  <Button fx:id="GVoitures" layoutX="28.0" layoutY="185.0" mnemonicParsing="false" onAction="#GestionVoitures" prefHeight="31.0" prefWidth="143.0" styleClass="ajouter" text="Gestion Voitures" />
+               </children>
+            </AnchorPane>
+        </content>
+      </TitledPane>
+      <TitledPane animated="false" layoutX="855.0" layoutY="55.0" text="Resultat">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="258.0" prefWidth="722.0">
+               <children>
+                  <TableView fx:id="table" layoutX="32.0" layoutY="23.0" prefHeight="200.0" prefWidth="479.0">
+                    <columns>
+                      <TableColumn fx:id="CNom" prefWidth="115.0" text="nom Garage" />
+                      <TableColumn fx:id="CCapacite" prefWidth="169.0" text="Capacite" />
+                        <TableColumn fx:id="Cemplacement" prefWidth="191.0" text="emplacement" />
+                    </columns>
+                  </TableView>
+               </children>
+            </AnchorPane>
+        </content>
+      </TitledPane>
+      <Button alignment="CENTER" layoutX="3.0" layoutY="6.0" mnemonicParsing="false" onAction="#dasho" prefHeight="38.0" prefWidth="225.0" styleClass="boutondash" text="DashBoard" />
+   </children>
+</AnchorPane>

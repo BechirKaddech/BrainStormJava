@@ -1,0 +1,118 @@
+.root{
+    -fx-background-color: #383838;
+    -fx-background-image: url("./beige.jpg");
+    -fx-background-size: cover;
+    
+}
+.label{
+    -fx-text-fill: #000000;
+    -fx-font-size: 20;
+    
+}
+.button{
+    -fx-background-color: #0080ff;
+    -fx-text-fill: #FFFFFF;
+    -fx-background-radius: 4;
+    -fx-font-size: 20;
+    
+}
+.text-field {
+    -fx-font-size: 12pt;
+    -fx-font-family: "Segoe UI Semibold";
+}
+.button-done{
+    -fx-background-color: #008040;
+    -fx-text-fill: #FFFFFF;
+    -fx-background-image: url("./done.png");
+    -fx-background-position: 20px;
+    -fx-background-repeat:no-repeat;
+    -fx-background-radius: 4;
+    -fx-font-size: 20;
+}
+.button-add{
+    -fx-background-color: #0080ff;
+    -fx-text-fill: #FFFFFF;
+    -fx-background-image: url("./add.png");
+    -fx-background-position: 20px;
+    -fx-background-repeat:no-repeat;
+    -fx-background-radius: 4;
+    -fx-font-size: 20;
+}
+
+.button-edit{
+    -fx-background-color: #000000;
+    -fx-text-fill: #FFFFFF;
+    -fx-background-image: url("./edit.png");
+    -fx-background-position: 20px;
+    -fx-background-repeat:no-repeat;
+    -fx-background-radius: 4;
+    -fx-font-size: 20;
+}
+
+.button-show{
+    -fx-background-color: #0080ff;
+    -fx-text-fill: #FFFFFF;
+    -fx-background-image: url("./show.png");
+    -fx-background-position: 20px;
+    -fx-background-repeat:no-repeat;
+    -fx-background-radius: 4;
+    -fx-font-size: 20;
+}
+.button-search{
+    -fx-background-color: #1d1d1d;
+    -fx-text-fill: #ffffff;
+    -fx-background-image: url("./search.png");
+    -fx-background-position: 220px;
+    -fx-background-repeat:no-repeat;
+    -fx-background-radius: 4;
+    -fx-font-size: 20;
+}
+
+
+
+.button-remove{
+    -fx-background-color: #000000;
+    -fx-text-fill: #FFFFFF;
+    -fx-background-image: url("./remove.png");
+    -fx-background-position: 20px;
+    -fx-background-repeat:no-repeat;
+    -fx-background-radius: 4;
+    -fx-font-size: 20;
+}
+
+.button-back{
+    -fx-background-color: #000000;
+    -fx-text-fill: #FFFFFF;
+    -fx-background-image: url("./back.png");
+    -fx-background-position: 20px;
+    -fx-background-repeat:no-repeat;
+    -fx-background-radius: 4;
+    -fx-font-size: 20;
+}
+
+.button-save{
+    -fx-background-color: #000000;
+    -fx-text-fill: #FFFFFF;
+    -fx-background-image: url("./save.png");
+    -fx-background-position: 20px;
+    -fx-background-repeat:no-repeat;
+    -fx-background-radius: 4;
+    -fx-font-size: 20;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

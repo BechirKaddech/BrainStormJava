@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="532.0" prefWidth="559.0" styleClass="fonddasho" stylesheets="@../CSS/Dash.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.govoyage.GUI.SejourmodifController">
+   <children>
+      <VBox prefHeight="467.0" prefWidth="598.0">
+         <children>
+            <HBox prefHeight="42.0" prefWidth="598.0">
+               <children>
+                  
+                              <TextField alignment="TOP_CENTER" editable="false" nodeOrientation="LEFT_TO_RIGHT" prefHeight="79.0" prefWidth="599.0" text="Modifier Sejour">
+                 
+                                  <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <font>
+                        <Font name="Bell MT" size="42.0" />
+                     </font>
+                    
+                              </TextField>
+                  
+               </children>
+            </HBox>
+            <HBox prefHeight="364.0" prefWidth="558.0">
+               <children>
+                  <Pane cacheShape="false" centerShape="false" prefHeight="271.0" prefWidth="598.0" scaleShape="false">
+                     <children>
+                        <Pane layoutX="130.0" layoutY="40.0" prefHeight="321.0" prefWidth="364.0" styleClass="paneles">
+                           <effect>
+                              <InnerShadow />
+                           </effect>
+                          
+                           <children>
+                              <Label layoutX="15.0" layoutY="18.0" prefHeight="27.0" prefWidth="109.0" text="Date depart" textFill="#570808">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="14.0" layoutY="71.0" prefHeight="27.0" prefWidth="103.0" text="date arriver">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="17.0" layoutY="203.0" prefHeight="27.0" prefWidth="97.0" text="nom hotele">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="t3" layoutX="137.0" layoutY="148.0" prefHeight="25.0" prefWidth="174.0" styleClass="stuletextfiledcircuit" />
+                              <Label layoutX="17.0" layoutY="145.0" text="prix">
+                                 <font>
+                                    <Font size="22.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="17.0" layoutY="250.0" prefHeight="27.0" prefWidth="97.0" text="nom ville">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Label>
+                              <ComboBox fx:id="c1" layoutX="137.0" layoutY="205.0" prefWidth="150.0" styleClass="combocircuit" />
+                              <ComboBox fx:id="c2" layoutX="137.0" layoutY="251.0" prefWidth="150.0" styleClass="combocircuit" />
+                              <DatePicker fx:id="t1" layoutX="137.0" layoutY="19.0" />
+                              <DatePicker fx:id="t2" layoutX="137.0" layoutY="72.0" />
+                           </children>
+                        </Pane>
+                        <Button layoutY="-1.0" mnemonicParsing="false" onAction="#dasho" prefHeight="25.0" prefWidth="109.0" styleClass="ajouter" text="precedent" />
+                     </children>
+                  </Pane>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <Button layoutX="244.0" layoutY="454.0" mnemonicParsing="false" onAction="#modifiersejour" prefHeight="25.0" prefWidth="109.0" styleClass="ajouter" text="Modifier" />
+   </children>
+</AnchorPane>

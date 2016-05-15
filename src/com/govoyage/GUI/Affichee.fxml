@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="800.0" styleClass="fonddasho" stylesheets="@../CSS/Dash.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.govoyage.GUI.AfficheeController">
+    <children>
+      <Pane layoutX="54.0" layoutY="81.0" prefHeight="356.0" prefWidth="693.0" styleClass="fonddasho" stylesheets="@../CSS/Dash.css" AnchorPane.bottomAnchor="63.0" AnchorPane.leftAnchor="54.0" AnchorPane.rightAnchor="53.0">
+         <children>
+            <ListView fx:id="showPane" layoutX="-6.0" prefHeight="356.0" prefWidth="706.0" />
+         </children>
+      </Pane>
+      <Button layoutX="333.0" layoutY="445.0" mnemonicParsing="false" onAction="#retour" prefHeight="35.0" prefWidth="154.0" styleClass="ajouter" text="Ajouter" />
+      <Button alignment="BOTTOM_CENTER" mnemonicParsing="false" onAction="#dasho" prefHeight="53.0" prefWidth="201.0" styleClass="boutondash" text="Dashboard" />
+   </children>
+</AnchorPane>

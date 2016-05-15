@@ -1,0 +1,808 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 30 mars 2016, 13:14:59
+    Author     : dell
+*/
+
+.baro2{
+    -fx-background-color: rgb(255, 255, 255);
+    -fx-background-image: url("../IMAGES/separ.png");
+    -fx-background-repeat: repeat-x;
+    -fx-background-attachment: scroll;
+    -fx-background-position: left top;
+    -fx-background-clip: border-box;
+    -fx-background-origin: padding-box;
+    -fx-background-size: auto auto;
+    -fx-height: 94px;
+}
+
+.baroint{
+    -fx-float: left;
+}
+
+.baroint2{
+    -fx-height: 94px;
+    -fx-width: 960px;
+    -fx-margin-left: auto;
+    -fx-margin-right: auto;
+    -fx-position: relative;
+    -fx-text-align: left;
+    -fx-text-align: left;
+   // -fx-padding: 0 10px;
+}
+
+
+
+
+.int2{
+    -fx-padding: 0;
+    -fx-margin: 0;
+    -fx-height: 94px;
+    -fx-padding: 0 1px 0 13px;
+    -fx-background-color: transparent;
+    -fx-background-image: url("../IMAGES/separ.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-attachment: scroll;
+    -fx-background-position: right bottom;
+    -fx-background-clip: border-box;
+    -fx-background-origin: padding-box;
+    -fx-background-size: auto auto;
+    
+}
+
+
+
+.boto{
+    -fx-height: 84px;
+    -fx-display: inline-block;
+    -fx-padding: 10px 0 0 1px;
+    -fx-background-color: transparent;
+    -fx-background-image: url("../IMAGES/separ.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-attachment: scroll;
+    -fx-background-position: left bottom;
+    -fx-background-clip: border-box;
+    -fx-background-origin: padding-box;
+    -fx-background-size: auto auto;
+ 
+}    
+ 
+#boto{
+    
+    -fx-background-image: url("../IMAGES/vol1.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-attachment: scroll;
+    -fx-background-position: center 18px;
+    -fx-background-clip: border-box;
+    -fx-background-origin: padding-box;
+    -fx-background-size: auto auto;
+    
+    -fx-text-fill: #8a8476;
+    -fx-font-family:"texgyreadventorbold", Arial, Verdana, Helvetica,sans-serif;
+    -fx-font-weight: bold;
+    -fx-font-size: 1.2em;
+    
+
+}
+
+#boto:hover{
+    -fx-background-color: transparent;
+    -fx-background-image: url("../IMAGES/vol2.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-attachment: scroll;
+    -fx-background-position: center 18px;
+    -fx-background-clip: border-box;
+    -fx-background-origin: padding-box;
+    -fx-background-size: auto auto;
+    -fx-background-color: #ffcf03;
+    -fx-text-fill:#273a47;
+    -fx-background-radius: 9px 9px 0 0;
+}
+
+#boto:armed{
+    
+    -fx-background-image: url("../IMAGES/vol3.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-attachment: scroll;
+    -fx-background-position: center 18px;
+    -fx-background-clip: border-box;
+    -fx-background-origin: padding-box;
+    -fx-background-size: auto auto;
+    
+    -fx-background-color: #75614b;
+    -fx-text-fill:#FFFFFF;
+    -fx-background-radius: 9px 9px 0 0;
+}
+///// modif temporaire j'ai enleve le armed
+/*#bouttonhotel{
+    
+    -fx-background-image: url("../IMAGES/hotel1.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-attachment: scroll;
+    -fx-background-position: center 18px;
+    -fx-background-clip: border-box;
+    -fx-background-origin: padding-box;
+    -fx-background-size: auto auto;
+    
+    -fx-text-fill: #8a8476;
+    -fx-font-family:"texgyreadventorbold", Arial, Verdana, Helvetica,sans-serif;
+    -fx-font-weight: bold;
+    -fx-font-size: 1.2em;
+    
+
+}*/
+
+#bouttonhotel:hover{
+    -fx-background-color: transparent;
+    -fx-background-image: url("../IMAGES/hotel2.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-attachment: scroll;
+    -fx-background-position: center 18px;
+    -fx-background-clip: border-box;
+    -fx-background-origin: padding-box;
+    -fx-background-size: auto auto;
+    -fx-background-color: #ffcf03;
+    -fx-text-fill:#273a47;
+    -fx-background-radius: 9px 9px 0 0;
+}
+
+#bouttonhotel{
+    
+    -fx-background-image: url("../IMAGES/hotel3.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-attachment: scroll;
+    -fx-background-position: center 18px;
+    -fx-background-clip: border-box;
+    -fx-background-origin: padding-box;
+    -fx-background-size: auto auto;
+    
+    -fx-background-color: #75614b;
+    -fx-text-fill:#FFFFFF;
+    -fx-background-radius: 9px 9px 0 0;
+}
+////
+
+#bouttonsejour{
+    
+    -fx-background-image: url("../IMAGES/sejour1.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-attachment: scroll;
+    -fx-background-position: center 18px;
+    -fx-background-clip: border-box;
+    -fx-background-origin: padding-box;
+    -fx-background-size: auto auto;
+    
+    -fx-text-fill: #8a8476;
+    -fx-font-family:"texgyreadventorbold", Arial, Verdana, Helvetica,sans-serif;
+    -fx-font-weight: bold;
+    -fx-font-size: 1.2em;
+    
+
+}
+
+#bouttonsejour:hover{
+    -fx-background-color: transparent;
+    -fx-background-image: url("../IMAGES/sejour2.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-attachment: scroll;
+    -fx-background-position: center 18px;
+    -fx-background-clip: border-box;
+    -fx-background-origin: padding-box;
+    -fx-background-size: auto auto;
+    -fx-background-color: #ffcf03;
+    -fx-text-fill:#273a47;
+    -fx-background-radius: 9px 9px 0 0;
+}
+
+#bouttonsejour:armed{
+    
+    -fx-background-image: url("../IMAGES/sejour3.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-attachment: scroll;
+    -fx-background-position: center 18px;
+    -fx-background-clip: border-box;
+    -fx-background-origin: padding-box;
+    -fx-background-size: auto auto;
+    
+    -fx-background-color: #75614b;
+    -fx-text-fill:#FFFFFF;
+    -fx-background-radius: 9px 9px 0 0;
+}
+
+
+#bouttoncircuit{
+    
+    -fx-background-image: url("../IMAGES/circuit1.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-attachment: scroll;
+    -fx-background-position: center 18px;
+    -fx-background-clip: border-box;
+    -fx-background-origin: padding-box;
+    -fx-background-size: auto auto;
+    
+    -fx-text-fill: #8a8476;
+    -fx-font-family:"texgyreadventorbold", Arial, Verdana, Helvetica,sans-serif;
+    -fx-font-weight: bold;
+    -fx-font-size: 1.2em;
+    
+
+}
+
+#bouttoncircuit:hover{
+    -fx-background-color: transparent;
+    -fx-background-image: url("../IMAGES/circuit2.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-attachment: scroll;
+    -fx-background-position: center 18px;
+    -fx-background-clip: border-box;
+    -fx-background-origin: padding-box;
+    -fx-background-size: auto auto;
+    -fx-background-color: #ffcf03;
+    -fx-text-fill:#273a47;
+    -fx-background-radius: 9px 9px 0 0;
+}
+
+#bouttoncircuit:armed{
+    
+    -fx-background-image: url("../IMAGES/circuit3.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-attachment: scroll;
+    -fx-background-position: center 18px;
+    -fx-background-clip: border-box;
+    -fx-background-origin: padding-box;
+    -fx-background-size: auto auto;
+    
+    -fx-background-color: #75614b;
+    -fx-text-fill:#FFFFFF;
+    -fx-background-radius: 9px 9px 0 0;
+}
+
+
+#bouttonville{
+    
+    -fx-background-image: url("../IMAGES/ville1.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-attachment: scroll;
+    -fx-background-position: center 18px;
+    -fx-background-clip: border-box;
+    -fx-background-origin: padding-box;
+    -fx-background-size: auto auto;
+    
+    -fx-text-fill: #8a8476;
+    -fx-font-family:"texgyreadventorbold", Arial, Verdana, Helvetica,sans-serif;
+    -fx-font-weight: bold;
+    -fx-font-size: 1.2em;
+    
+
+}
+
+#bouttonville:hover{
+    -fx-background-color: transparent;
+    -fx-background-image: url("../IMAGES/ville2.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-attachment: scroll;
+    -fx-background-position: center 18px;
+    -fx-background-clip: border-box;
+    -fx-background-origin: padding-box;
+    -fx-background-size: auto auto;
+    -fx-background-color: #ffcf03;
+    -fx-text-fill:#273a47;
+    -fx-background-radius: 9px 9px 0 0;
+}
+
+#bouttonville:armed{
+    
+    -fx-background-image: url("../IMAGES/ville3.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-attachment: scroll;
+    -fx-background-position: center 18px;
+    -fx-background-clip: border-box;
+    -fx-background-origin: padding-box;
+    -fx-background-size: auto auto;
+    
+    -fx-background-color: #75614b;
+    -fx-text-fill:#FFFFFF;
+    -fx-background-radius: 9px 9px 0 0;
+}
+
+#bouttonvoiture{
+    
+    -fx-background-image: url("../IMAGES/voiture1.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-attachment: scroll;
+    -fx-background-position: center 18px;
+    -fx-background-clip: border-box;
+    -fx-background-origin: padding-box;
+    -fx-background-size: auto auto;
+    
+    -fx-text-fill: #8a8476;
+    -fx-font-family:"texgyreadventorbold", Arial, Verdana, Helvetica,sans-serif;
+    -fx-font-weight: bold;
+    -fx-font-size: 1.2em;
+    
+
+}
+
+#bouttonvoiture:hover{
+    -fx-background-color: transparent;
+    -fx-background-image: url("../IMAGES/voiture2.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-attachment: scroll;
+    -fx-background-position: center 18px;
+    -fx-background-clip: border-box;
+    -fx-background-origin: padding-box;
+    -fx-background-size: auto auto;
+    -fx-background-color: #ffcf03;
+    -fx-text-fill:#273a47;
+    -fx-background-radius: 9px 9px 0 0;
+}
+
+#bouttonvoiture:armed{
+    
+    -fx-background-image: url("../IMAGES/voiture3.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-attachment: scroll;
+    -fx-background-position: center 18px;
+    -fx-background-clip: border-box;
+    -fx-background-origin: padding-box;
+    -fx-background-size: auto auto;
+    
+    -fx-background-color: #75614b;
+    -fx-text-fill:#FFFFFF;
+    -fx-background-radius: 9px 9px 0 0;
+}
+
+
+#bouttonforum{
+    
+    -fx-background-image: url("../IMAGES/forum1.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-attachment: scroll;
+    -fx-background-position: center 18px;
+    -fx-background-clip: border-box;
+    -fx-background-origin: padding-box;
+    -fx-background-size: auto auto;
+    
+    -fx-text-fill: #8a8476;
+    -fx-font-family:"texgyreadventorbold", Arial, Verdana, Helvetica,sans-serif;
+    -fx-font-weight: bold;
+    -fx-font-size: 1.2em;
+    
+
+}
+
+#bouttonforum:hover{
+    -fx-background-color: transparent;
+    -fx-background-image: url("../IMAGES/forum2.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-attachment: scroll;
+    -fx-background-position: center 18px;
+    -fx-background-clip: border-box;
+    -fx-background-origin: padding-box;
+    -fx-background-size: auto auto;
+    -fx-background-color: #ffcf03;
+    -fx-text-fill:#273a47;
+    -fx-background-radius: 9px 9px 0 0;
+}
+
+#bouttonforum:armed{
+    
+    -fx-background-image: url("../IMAGES/forum3.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-attachment: scroll;
+    -fx-background-position: center 18px;
+    -fx-background-clip: border-box;
+    -fx-background-origin: padding-box;
+    -fx-background-size: auto auto;
+    
+    -fx-background-color: #75614b;
+    -fx-text-fill:#FFFFFF;
+    -fx-background-radius: 9px 9px 0 0;
+}
+
+.logo{
+    -fx-height: 84px;
+    
+    -fx-display: block;
+    -fx-padding: 3px 0 5px 0;  //espacement du text
+    -fx-border-top: solid 1px #6d6554;
+    -fx-text-fill:#565046;
+    -fx-font-family: "texgyreadventorregular", Arial, Verdana, Helvetica,sans-serif;
+    -fx-font-size: 1.1em;
+    -fx-letter-spacing: 1.4em;
+  
+    
+    -fx-background-color: transparent;
+    -fx-background-image: url("../IMAGES/separ.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-attachment: scroll;
+    -fx-background-position: left bottom;
+    -fx-background-clip: border-box;
+    -fx-background-origin: padding-box;
+    -fx-background-size: auto auto;    
+}
+
+
+#logo{
+    
+    -fx-background-image: url("../IMAGES/logo.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-attachment: scroll;
+    -fx-background-position: center 0px;
+    -fx-background-clip: border-box;
+    -fx-background-origin: padding-box;
+    -fx-background-size: 232px 84px;    
+    
+    
+}
+
+.bareheure{
+    -fx-padding: 8px 10px 0 40px;
+    -fx-background-color: transparent;
+    -fx-background-image: url("../IMAGES/pictohours.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-attachment: scroll;
+    -fx-background-position: 20px 13px;
+    -fx-background-clip: border-box;
+    -fx-background-origin: padding-box;
+    -fx-background-size: auto auto;
+    
+    -fx-float: left;
+    -fx-height: 48px;
+    -fx-moz-box-sizing: border-box;
+    -fx-webkit-box-sizing: border-box;
+    -fx-box-sizing: border-box;
+
+}
+
+#time{
+    -fx-color: #ffffff;
+    -fx-font-size: 1.2em;
+    -fx-font-family: "texgyreadventorbold", Arial, Verdana, Helvetica,sans-serif;
+    -fx-font-weight: bold;
+}
+
+.texttime{
+    -fx-text-fill: #90969d;
+    -fx-font-size: 1.1em;
+    -fx-font-family: "texgyreadventorregular", Arial, Verdana, Helvetica,sans-serif;
+}
+
+.numero{
+    -fx-text-fill: #ffcf03;
+    -fx-font-size: 1.5em;
+    -fx-font-family: "texgyreadventorbold", Arial, Verdana, Helvetica,sans-serif;
+    -fx-font-weight: bold;
+}
+
+.numerotexto{
+    -fx-display: block;
+    -fx-text-align: left;
+    -fx-font-size: 0.9em;
+    -fx-line-height: 1em;
+    -fx-text-fill: #FFFFFF;
+}
+
+.recherchtt{
+    
+    -fx-background-color: rgba(26,26,26,.85); 
+    -fx-background-radius: 0 0 0 0;
+    -fx-display: table;
+    -fx-table-layout: fixed;
+    -fx-position: relative;
+    -fx-z-index: 6;
+    
+}
+
+.recherchhotelon{
+    -fx-background-color: rgba(26,26,26,.85); 
+    -fx-background-radius: 0 0 0 0;
+    -fx-text-fill: #fff;
+    -fx-font:15px Tahoma;  
+}
+
+.recherchhoteloff{
+    -fx-background-color: #fff; 
+    -fx-text-fill: #1a1a1a;
+    -fx-background-radius: 0 0 0 0;
+    -fx-font:15px Tahoma;    
+}
+
+.recherchhoteloff:hover{
+    -fx-background-color: rgb(197, 197, 197); 
+}
+
+.boutonrech{
+    -fx-text-fill: #fff;
+    -fx-background-color: #dd394a;
+    -fx-background-radius: 0 0 0 0;
+    -fx-font:15px Tahoma; 
+    -fx-background-image: url("../IMAGES/direct.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-attachment: scroll;
+    -fx-background-position: 150 11;
+    -fx-background-clip: border-box;
+    -fx-background-origin: padding-box;
+    -fx-background-size: 15px 15px; 
+    -fx-border-color:#dd394a;
+    
+}
+.boutonrech:hover{
+    -fx-opacity: 0.75;
+}
+
+.boutoncenter{
+    -fx-text-decoration: none;
+    -fx-text-fill: #1a1a1a;
+    
+    -fx-height: 84px;
+    -fx-display: inline-block;
+    -fx-padding: 4px 0 0 1px;
+    -fx-background-color: transparent;
+      
+    -fx-border-radius: 0;
+    -fx-margin-right: 2px;
+    -fx-border: none;
+    //-fx-padding: 9px 15px;
+    -fx-font-weight: 700;
+    
+    -fx-font-size: 1.4em;
+}
+
+#boutoncenter{
+    
+    -fx-background-color: rgb(255, 255, 255);
+    -fx-background-repeat: repeat;
+    -fx-background-attachment: scroll;
+    -fx-background-position: 0% 0%;
+    -fx-background-clip: border-box;
+    -fx-background-origin: padding-box;
+    -fx-background-size: auto auto;  
+    
+}
+
+.stylepourtransp{
+    
+    -fx-text-fill: #c5c5c5;
+    -fx-font:15px Tahoma;
+
+}
+
+#textfiledh{
+     -fx-webkit-appearance: none;
+    -fx-moz-appearance: none;
+    -fx-appearance: none;
+    -fx-background: #fff;
+    -fx-webkit-filter: none;
+    -fx-filter: none;
+    -fx-border-radius: 4px;
+    -fx-box-shadow: inset 0 0 4px rgba(0,0,0,0.2);
+    -fx-height: 42px;
+    -fx-width: 100%;
+    //-fx-border: 1px solid #ccc;
+    -fx-color: #333;
+    -fx-font-size: 10px;
+    -fx-box-sizing: border-box;
+    -fx-padding: 10px;
+    -fx-border-color: #ccc;
+    
+}
+
+#textfiledh:focused{
+    //-fx-background-color: rgb(222, 28, 62);
+    -fx-border-color: #B5B5B5;
+    //-fx-border-radius: 5,5,5;
+    -fx-border-insets: 1,1,1,1;
+    -fx-border-style: solid;
+
+   
+}
+
+#datepiker{
+-fx-background-color: #313131;
+}
+    
+.boutonadroitepar{
+    -fx-background-radius: 5px 0 0 5px;// la carbure du bouton!!!!!!!!!!
+    -fx-background-color: rgb(92, 79, 66);
+    -fx-background-image: url("../IMAGES/btn_partage.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-attachment: scroll;
+    -fx-background-position: left top;
+    -fx-background-clip: border-box;
+    -fx-background-origin: padding-box;
+    -fx-background-size: auto auto;
+}
+.boutonadroitepar:hover{
+    -fx-opacity: 0.75;
+   
+}
+
+.boutonadroitedev{
+    -fx-background-radius: 5px 0 0 5px;// la carbure du bouton!!!!!!!!!!
+    -fx-background-color: rgb(255, 207, 3);
+    -fx-background-image: url("../IMAGES/devis.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-attachment: scroll;
+    -fx-background-position: 1 top;
+    -fx-background-clip: border-box;
+    -fx-background-origin: padding-box;
+    -fx-background-size: auto auto;
+}
+.boutonadroitedev:hover{
+    -fx-opacity: 0.75;
+   
+}
+
+.boutonadroitecomp{
+    -fx-background-radius: 5px 0 0 5px;// la carbure du bouton!!!!!!!!!!
+    -fx-background-color: rgb(221, 219, 216);
+    -fx-background-image: url("../IMAGES/compte.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-attachment: scroll;
+    -fx-background-position: left top;
+    -fx-background-clip: border-box;
+    -fx-background-origin: padding-box;
+    -fx-background-size: auto auto;
+}
+.boutonadroitecomp:hover{
+    -fx-opacity: 0.75;
+   
+}
+
+.boutonadroitefavo{
+    -fx-background-radius: 5px 0 0 5px;// la carbure du bouton!!!!!!!!!!
+    -fx-background-color: #5c4f42;
+    -fx-background-image: url("../IMAGES/favoris.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-attachment: scroll;
+    -fx-background-position: left top;
+    -fx-background-clip: border-box;
+    -fx-background-origin: padding-box;
+    -fx-background-size: auto auto;
+}
+.boutonadroitefavo:hover{
+    -fx-opacity: 0.75;
+   
+}
+
+
+.boutonadroiteaj{
+    -fx-background-radius: 5px 0 0 5px;// la carbure du bouton!!!!!!!!!!
+    -fx-background-color: #101029;
+    -fx-background-image: url("../IMAGES/ajouter.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-attachment: scroll;
+    -fx-background-position: left top;
+    -fx-background-clip: border-box;
+    -fx-background-origin: padding-box;
+    -fx-background-size: auto auto;
+}
+.boutonadroiteaj:hover{
+    -fx-opacity: 0.75;
+   
+}
+
+
+
+
+
+
+.songon{
+        
+    -fx-background-color: transparent;
+    -fx-background-image: url("../IMAGES/songg.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-attachment: scroll;
+    -fx-background-position: right bottom;
+    -fx-background-clip: border-box;
+    -fx-background-origin: padding-box;
+    -fx-background-size: 30px 30px;    
+    
+    
+}
+
+
+.tabloto {
+    -fx-background-color: khaki;
+    -fx-border-color: grey
+}
+
+#table-row-cell:empty {
+    -fx-background-color: khaki;
+    -fx-border-color: grey;
+}
+
+
+.bas{
+    -fx-background-color:rgba(0,0,0,0.8);
+}
+
+.combo{
+    -fx-background-radius: 5px 5px 5px 5px;
+    -fx-background-color: #fff;
+}
+
+.mailnewsfiled{
+    -fx-background-color: #fff;
+    -fx-background-radius: 4px 0px 0px 4px;
+    
+}
+
+.mailnewsbut{
+    -fx-background-radius: 4px 4px 4px 4px;
+     -fx-background-color: rgb(242, 242, 242);
+    -fx-text-fill: #f60;
+}
+
+.identif{
+    -fx-color:rgb(77, 77, 77);
+    -fx-background-color: linear-gradient(to bottom, rgb(34, 46, 59), rgb(1, 2, 2));
+    -fx-background-radius: 0px 0px 0px 0px;
+    -fx-background-image: url("../IMAGES/social.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-attachment: scroll;
+    -fx-background-position: 10px 12px;
+    -fx-background-clip: border-box;
+    -fx-background-origin: padding-box;
+    -fx-background-size: 20px 20px;       
+     
+}
+
+.traduction{
+    -fx-color:#414244;
+    -fx-background-color: #2E3844;
+    -fx-background-radius: 0px 0px 0px 0px;
+    -fx-background-size: 20px 20px;       
+     
+}
+
+
+.testo{
+    
+    
+    -fx-background-image: url("../IMAGES/destination.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-attachment: scroll;
+    -fx-background-position: center 20px;
+    -fx-background-clip: border-box;
+    -fx-background-origin: padding-box;
+    -fx-background-size: auto auto;
+    -fx-padding: 12 30 12 30;
+    -fx-text-fill: white;
+    -fx-font-size: 12px;
+   
+    
+}
+
+.top{
+    -fx-color:rgb(77, 77, 77);
+    -fx-background-color: linear-gradient(to bottom, rgb(34, 46, 59), rgb(1, 2, 2));
+
+    -fx-background-repeat: repeat;
+    -fx-background-attachment: scroll;
+    -fx-background-position: 0% 0%;
+    -fx-background-clip: border-box;
+    -fx-background-origin: padding-box;
+    -fx-background-size: auto auto;
+}
+
+
+.listview{
+    -fx-background-color: transparent;
+}
+
+
+
+.listview .scroll-bar:vertical {
+    -fx-opacity: 0;
+    -fx-padding:0;
+}
+
+.fond{
+    -fx-background-color: #F6F3BD;
+}

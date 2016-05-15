@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.web.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="532.0" prefWidth="559.0" styleClass="fonddasho" stylesheets="@../CSS/Dash.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.govoyage.GUI.AjourSejourController">
+
+
+   <children>
+      <VBox prefHeight="467.0" prefWidth="598.0">
+         <children>
+            <HBox prefHeight="79.0" prefWidth="573.0">
+               <children>
+                  
+                              <TextField alignment="TOP_CENTER" editable="false" nodeOrientation="LEFT_TO_RIGHT" prefHeight="79.0" prefWidth="559.0" text="Ajouter Sejour">
+                 
+                                  <opaqueInsets>
+                        
+                     </opaqueInsets>
+                     <font>
+                        <Font name="Bell MT" size="42.0" />
+                     </font>
+                    
+                              </TextField>
+                  
+               </children>
+            </HBox>
+            <HBox prefHeight="364.0" prefWidth="558.0">
+               <children>
+                  <Pane cacheShape="false" centerShape="false" prefHeight="271.0" prefWidth="598.0" scaleShape="false">
+                     <children>
+                        <ImageView fitHeight="483.0" fitWidth="605.0" layoutX="-3.0" layoutY="-1.0" pickOnBounds="true" />
+                        <Pane layoutX="130.0" layoutY="58.0" prefHeight="303.0" prefWidth="364.0" styleClass="paneles">
+                           <effect>
+                              <InnerShadow />
+                           </effect>
+                          
+                           <children>
+                              <Label layoutX="15.0" layoutY="18.0" prefHeight="27.0" prefWidth="109.0" text="Date depart" textFill="#570808">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="14.0" layoutY="71.0" prefHeight="27.0" prefWidth="103.0" text="Date arriver">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="17.0" layoutY="202.0" prefHeight="27.0" prefWidth="97.0" text="Nom hotele">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="t3" layoutX="137.0" layoutY="128.0" prefHeight="25.0" prefWidth="174.0" />
+                              <Label layoutX="17.0" layoutY="126.0" text="prix">
+                                 <font>
+                                    <Font size="22.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="17.0" layoutY="246.0" prefHeight="27.0" prefWidth="97.0" text="Nom ville">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Label>
+                              <ComboBox fx:id="c1" layoutX="139.0" layoutY="203.0" prefWidth="150.0" />
+                              <ComboBox fx:id="c2" layoutX="139.0" layoutY="247.0" prefWidth="150.0" />
+                              <DatePicker fx:id="t1" layoutX="137.0" layoutY="19.0" />
+                              <DatePicker fx:id="t2" layoutX="137.0" layoutY="72.0" />
+                           </children>
+                        </Pane>
+                        <Button fx:id="l1" layoutX="312.0" layoutY="379.0" mnemonicParsing="false" onAction="#handle1" styleClass="ajouter" text="Afficher" textFill="WHITE" />
+                        <Button layoutX="198.0" layoutY="379.0" mnemonicParsing="false" onAction="#AjouteSejour" styleClass="ajouter" text="Ajouter" textFill="WHITE" />
+                        <Button alignment="BOTTOM_CENTER" layoutY="-4.0" mnemonicParsing="false" onAction="#dasho" prefHeight="48.0" prefWidth="109.0" styleClass="boutondash" text="Dashboard" />
+                     </children>
+                  </Pane>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

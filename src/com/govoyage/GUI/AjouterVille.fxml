@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="680.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.govoyage.GUI.AjouterVilleController">
+   <children>
+      <Pane onDragDetected="#AjouterVille" prefHeight="680.0" prefWidth="1280.0" styleClass="fonddasho" stylesheets="@../CSS/Dash.css">
+         <children>
+            <Label layoutX="295.0" layoutY="151.0" prefHeight="17.0" prefWidth="55.0" text="Pays" textFill="#141313">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="295.0" layoutY="105.0" prefHeight="17.0" prefWidth="55.0" styleClass="l" text="Nom" textFill="#141313">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="294.0" layoutY="211.0" prefHeight="27.0" prefWidth="85.0" text="Latitude" textFill="#171717">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="295.0" layoutY="264.0" text="Longitude" textFill="#1b1a1a">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="300.0" layoutY="382.0" prefHeight="17.0" prefWidth="62.0" text="Type" textFill="#0d0d0d">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="300.0" layoutY="447.0" text="Langue" textFill="#252424">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Button fx:id="add" layoutX="566.0" layoutY="555.0" mnemonicParsing="false" onAction="#AjouterVille" prefHeight="32.0" prefWidth="136.0" style="-fx-graphic: url('http://www.randomizz.com/images/ajouter.png')" styleClass="ajouter" text="Ajouter" />
+            <ComboBox fx:id="pays" layoutX="545.0" layoutY="154.0" prefWidth="150.0" styleClass="combocircuit" />
+            <TextField fx:id="nom" layoutX="546.0" layoutY="108.0" styleClass="stuletextfiledcircuit" />
+            <TextArea fx:id="description" layoutX="546.0" layoutY="313.0" prefHeight="62.0" prefWidth="225.0" styleClass="styletexarreacircuit" />
+            <TextField fx:id="latitude" layoutX="546.0" layoutY="201.0" styleClass="stuletextfiledcircuit" />
+            <TextField fx:id="longitude" layoutX="546.0" layoutY="267.0" styleClass="stuletextfiledcircuit" />
+            <TextField fx:id="type" layoutX="546.0" layoutY="399.0" styleClass="stuletextfiledcircuit" />
+            <ComboBox fx:id="langue" layoutX="545.0" layoutY="450.0" prefWidth="150.0" styleClass="combocircuit" />
+            <Label layoutX="416.0" layoutY="20.0" prefHeight="25.0" prefWidth="150.0" text="Ajouter Ville" textFill="#ab0d0d">
+               <font>
+                  <Font name="Berlin Sans FB" size="24.0" />
+               </font>
+            </Label>
+            <Label graphicTextGap="5.0" layoutX="291.0" layoutY="328.0" prefHeight="27.0" prefWidth="122.0" text="Description" textFill="#1b1a1a" textOverrun="CENTER_WORD_ELLIPSIS">
+               <font>
+                  <Font name="Arial Bold" size="18.0" />
+               </font>
+            </Label>
+            <Button layoutX="379.0" layoutY="555.0" mnemonicParsing="false" onAction="#dashVille" prefHeight="31.0" prefWidth="122.0" styleClass="ajouter" text="Precedent" />
+            <Button alignment="BOTTOM_CENTER" layoutY="3.0" mnemonicParsing="false" onAction="#dasho" prefHeight="47.0" prefWidth="202.0" styleClass="boutondash" text="DashBoard" />
+            <Button layoutX="764.0" layoutY="554.0" mnemonicParsing="false" onAction="#AJOUTERIMAGE" prefHeight="31.0" prefWidth="136.0" style="-fx-graphic: url('http://www.randomizz.com/images/ajouter.png');" styleClass="ajouter" text="IMAGE" />
+            <ImageView fx:id="iv1" fitHeight="200.0" fitWidth="400.0" layoutX="820.0" layoutY="192.0" pickOnBounds="true" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

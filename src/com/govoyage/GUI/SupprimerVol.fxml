@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="900.0" styleClass="fonddasho" stylesheets="@../CSS/Dash.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.govoyage.GUI.SupprimerVolController">
+    <children>
+      <ListView fx:id="showPane" layoutX="60.0" layoutY="76.0" prefHeight="460.0" prefWidth="780.0" />
+      <Button alignment="BOTTOM_CENTER" mnemonicParsing="false" onAction="#dasho" prefHeight="48.0" prefWidth="174.0" styleClass="boutondash" text="Dashboard" />
+      <Button layoutX="379.0" layoutY="553.0" mnemonicParsing="false" onAction="#ajouter" prefHeight="33.0" prefWidth="143.0" styleClass="ajouter" text="Ajouter" />
+   </children>
+</AnchorPane>

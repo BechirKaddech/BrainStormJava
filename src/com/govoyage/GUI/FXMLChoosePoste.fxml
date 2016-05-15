@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.net.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="300.0" prefWidth="400.0" stylesheets="@Css/Test2.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.govoyage.GUI.FXMLChoosePosteController">
+   <children>
+      <Label layoutX="74.0" layoutY="114.0" prefHeight="72.0" prefWidth="359.0" text="Sélectionner un Poste !" textFill="#ee0101">
+         <font>
+            <Font name="Calisto MT" size="26.0" />
+         </font>
+      </Label>
+      <Button layoutX="139.0" layoutY="208.0" mnemonicParsing="false" onAction="#valider" prefHeight="25.0" prefWidth="103.0" styleClass="okk" stylesheets="@../CSS/test.css" text="Ok" />
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="129.0" layoutY="-7.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../IMAGES/care_1.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

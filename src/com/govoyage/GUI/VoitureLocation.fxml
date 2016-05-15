@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="matriculeTE" prefHeight="528.0" prefWidth="1312.0" styleClass="fonddasho" stylesheets="@../CSS/Dash.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.govoyage.GUI.VoitureLocationController">
+   <children>
+      <TitledPane animated="false" layoutX="30.0" layoutY="27.0" prefHeight="457.0" prefWidth="235.0" text="Commandes">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="343.0" prefWidth="233.0">
+               <children>
+                  <Button layoutX="28.0" layoutY="26.0" mnemonicParsing="false" onAction="#ajouterVoiture" prefHeight="31.0" prefWidth="145.0" styleClass="ajouter" text="Ajouter" />
+                  <Button layoutX="28.0" layoutY="76.0" mnemonicParsing="false" onAction="#modifierVoiture" prefHeight="31.0" prefWidth="145.0" styleClass="ajouter" text="Modifier" />
+                  <Button layoutX="28.0" layoutY="127.0" mnemonicParsing="false" onAction="#supprimerVoiture" prefHeight="31.0" prefWidth="145.0" styleClass="ajouter" text="Supprimer" />
+                  <Button layoutX="75.0" layoutY="355.0" mnemonicParsing="false" onAction="#retourGarage" styleClass="ajouter" text="retour" />
+                  <Button alignment="CENTER" layoutX="4.0" layoutY="298.0" mnemonicParsing="false" onAction="#dasho" prefHeight="38.0" prefWidth="225.0" styleClass="boutondash" text="DashBoard" />
+               </children>
+            </AnchorPane>
+        </content>
+      </TitledPane>
+      <TitledPane animated="false" layoutX="299.0" layoutY="27.0" text="Données">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="424.0" prefWidth="200.0">
+               <children>
+                  <TextField id="matTF" fx:id="marqueTF" layoutX="16.0" layoutY="96.0" styleClass="styletexarreacircuit" />
+                  <Text layoutX="20.0" layoutY="83.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Marque" />
+                  <Text layoutX="16.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Matricule" />
+                  <TextField id="matTF" fx:id="matriculeTF" layoutX="16.0" layoutY="39.0" styleClass="styletexarreacircuit" />
+                  <Text layoutX="16.0" layoutY="143.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Model" />
+                  <TextField fx:id="modelTF" layoutX="16.0" layoutY="156.0" styleClass="styletexarreacircuit" />
+                  <TextField fx:id="prixTF" layoutX="16.0" layoutY="220.0" styleClass="styletexarreacircuit" />
+                  <Text layoutX="21.0" layoutY="208.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Prix" />
+                  <Text layoutX="20.0" layoutY="268.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Etat" />
+                  <ComboBox fx:id="disponibiliteCB" layoutX="9.0" layoutY="281.0" prefHeight="31.0" prefWidth="182.0" promptText="Disponibite" styleClass="combocircuit" visibleRowCount="2" />
+                  <Text layoutX="20.0" layoutY="338.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                  <ComboBox fx:id="garageCB" layoutX="16.0" layoutY="354.0" prefHeight="25.0" prefWidth="167.0" promptText="Garage" styleClass="combocircuit" />
+               </children>
+            </AnchorPane>
+        </content>
+      </TitledPane>
+      <TitledPane animated="false" layoutX="536.0" layoutY="27.0" prefHeight="457.0" prefWidth="647.0" text="Resulat">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="425.0" prefWidth="621.0">
+               <children>
+                  <TextField fx:id="rechTxt" layoutX="115.0" layoutY="14.0" onKeyReleased="#findBy" prefHeight="31.0" prefWidth="477.0" />
+                  <Text layoutX="22.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Recherche" wrappingWidth="75.6708984375" />
+                  <TableView fx:id="table" layoutX="39.0" layoutY="78.0" prefHeight="313.0" prefWidth="568.0">
+                    <columns>
+                      <TableColumn fx:id="matCell" prefWidth="114.0" text="Matricule" />
+                      <TableColumn fx:id="marCell" prefWidth="101.0" text="Marque" />
+                        <TableColumn fx:id="modCell" prefWidth="103.0" text="Model" />
+                        <TableColumn fx:id="prixCell" prefWidth="94.0" text="Prix" />
+                        <TableColumn fx:id="etatCell" prefWidth="153.0" text="Etat" />
+                    </columns>
+                  </TableView>
+               </children>
+            </AnchorPane>
+        </content>
+      </TitledPane>
+   </children>
+</AnchorPane>

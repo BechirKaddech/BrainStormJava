@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="fonddasho" stylesheets="@../CSS/Dash.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.govoyage.GUI.ModifiercompteController">
+   <children>
+      <TextField fx:id="nom" layoutX="263.0" layoutY="104.0" />
+      <TextField fx:id="prenom" layoutX="263.0" layoutY="153.0" />
+      <TextField fx:id="email" layoutX="263.0" layoutY="207.0" />
+      <TextField fx:id="password" layoutX="263.0" layoutY="262.0" />
+      <TextField fx:id="username" layoutX="263.0" layoutY="56.0" />
+      <Label layoutX="156.0" layoutY="106.0" text="nom">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Label>
+      <Label layoutX="152.0" layoutY="155.0" text="prenom">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Label>
+      <Label layoutX="160.0" layoutY="219.0" text="email">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Label>
+      <Label layoutX="160.0" layoutY="265.0" text="password">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Label>
+      <Label layoutX="156.0" layoutY="60.0" text="username">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Label>
+      <Button layoutX="236.0" layoutY="325.0" mnemonicParsing="false" onAction="#btnEnregistreraction" prefHeight="31.0" prefWidth="129.0" styleClass="ajouter" text="enregistrer" />
+      <ImageView fitHeight="45.0" fitWidth="46.0" layoutX="96.0" layoutY="206.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../IMAGES/email.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="45.0" fitWidth="46.0" layoutX="96.0" layoutY="252.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../IMAGES/password.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="45.0" fitWidth="46.0" layoutX="96.0" layoutY="46.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../IMAGES/user.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="236.0" layoutY="361.0" mnemonicParsing="false" onAction="#Home" prefHeight="31.0" prefWidth="129.0" styleClass="ajouter" text="accueil" />
+   </children>
+</AnchorPane>

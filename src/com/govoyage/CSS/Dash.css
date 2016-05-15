@@ -1,0 +1,249 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 3 avr. 2016, 00:29:14
+    Author     : dell
+*/
+
+
+.fondajoutcircuit{
+    
+    -fx-background-color: rgb(39, 58, 71);
+}
+
+.stlelabelajoutcircuit{
+     -fx-text-fill: black;
+    -fx-font-size: 15px;
+    
+}
+
+.styletexarreacircuit{
+    
+}
+
+.stuletextfiledcircuit{
+    -fx-background-color: #fff;
+    -fx-background-radius: 4px 4px 4px 4px;
+}
+
+.stuletextfiledcircuit:focused{
+    -fx-border-color: #f60;
+    -fx-background-radius: 4px 4px 4px 4px;
+    
+}
+
+.combocircuit{
+    -fx-background-radius: 5px 5px 5px 5px;
+    -fx-background-color: #fff;
+}
+
+.boutonajout{
+    
+}
+
+
+.menubouton{
+    
+    -fx-height: 84px;
+    -fx-display: inline-block;
+    -fx-padding: 10px 0 0 1px;
+    -fx-background-color: #43434A;
+    -fx-background-radius: 0px 0px 0 0;
+    -fx-border-radius: 1px;
+    -fx-border-color: #FAFAFF;
+    -fx-font-family:"texgyreadventorbold", Arial, Verdana, Helvetica,sans-serif;
+    -fx-font-weight: bold;
+    -fx-font-size: 1.2em;  
+   
+}
+
+.menubouton:hover{
+
+    -fx-opacity: 0.75;
+    
+}
+
+.acceuille{
+        -fx-background-color: #4A872A;
+        -fx-background-radius: 0px ;
+    
+}
+
+#acceuille{
+    -fx-background-image: url("../IMAGES/Home.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-attachment: scroll;
+    -fx-background-position: 50px 25px;
+    -fx-background-clip: border-box;
+    -fx-background-origin: padding-box;
+    -fx-background-size: auto auto;
+    -fx-background-color: #75614b;
+    -fx-text-fill:#ffcf03;
+    -fx-background-radius: 9px 9px 0 0;
+    -fx-font-size: 1.2em; 
+    -fx-font-weight: bold;
+}
+
+#acceuille:hover{
+    -fx-background-image: url("../IMAGES/Homehover.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-attachment: scroll;
+    -fx-background-position: 50px 25px;
+    -fx-background-clip: border-box;
+    -fx-background-origin: padding-box;
+    -fx-background-size: auto auto;
+    -fx-text-fill:#273a47;
+    -fx-background-radius: 9px 9px 0 0;
+    -fx-font-size: 1.2em; 
+    -fx-font-weight: bold;
+}
+
+#statistic{
+    
+    -fx-background-image: url("../IMAGES/stat.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-attachment: scroll;
+    -fx-background-position: 30px 25px;
+    -fx-background-clip: border-box;
+    -fx-background-origin: padding-box;
+    -fx-background-size: auto auto;
+}
+
+#reclam{
+    
+    -fx-background-image: url("../IMAGES/reclam.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-attachment: scroll;
+    -fx-background-position: 18px 22px;
+    -fx-background-clip: border-box;
+    -fx-background-origin: padding-box;
+    -fx-background-size: auto auto;
+}
+
+#vol{
+    
+    -fx-background-image: url("../IMAGES/vol.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-attachment: scroll;
+    -fx-background-position: 18px 22px;
+    -fx-background-clip: border-box;
+    -fx-background-origin: padding-box;
+    -fx-background-size: auto auto;
+}
+
+#hotel{
+    
+    -fx-background-image: url("../IMAGES/hotel.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-attachment: scroll;
+    -fx-background-position: 18px 22px;
+    -fx-background-clip: border-box;
+    -fx-background-origin: padding-box;
+    -fx-background-size: auto auto;
+}
+
+#circuit{
+    
+    -fx-background-image: url("../IMAGES/circo.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-attachment: scroll;
+    -fx-background-position: 18px 22px;
+    -fx-background-clip: border-box;
+    -fx-background-origin: padding-box;
+    -fx-background-size: auto auto;
+}
+
+#ville{
+    
+    -fx-background-image: url("../IMAGES/circ.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-attachment: scroll;
+    -fx-background-position: 18px 22px;
+    -fx-background-clip: border-box;
+    -fx-background-origin: padding-box;
+    -fx-background-size: auto auto;
+}
+
+#sejour{
+    
+    -fx-background-image: url("../IMAGES/summer.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-attachment: scroll;
+    -fx-background-position: 18px 13px;
+    -fx-background-clip: border-box;
+    -fx-background-origin: padding-box;
+    -fx-background-size: auto auto;
+}
+
+#voiture{
+    
+    -fx-background-image: url("../IMAGES/car.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-attachment: scroll;
+    -fx-background-position: 18px 13px;
+    -fx-background-clip: border-box;
+    -fx-background-origin: padding-box;
+    -fx-background-size: auto auto;
+}
+
+.boutondash{
+    -fx-background-color: #75614b;
+    -fx-background-radius: 0px;
+    -fx-text-fill:#ffcf03;
+    -fx-background-image: url("../IMAGES/dasho.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-attachment: scroll;
+    -fx-background-position: center top;
+    -fx-background-clip: border-box;
+    -fx-background-origin: padding-box;
+    -fx-background-size: auto auto;
+    
+    -fx-font-family:"texgyreadventorbold", Arial, Verdana, Helvetica,sans-serif;
+    -fx-font-weight: bold;
+    -fx-font-size: 1.2em;  
+}
+
+.boutondash:hover{
+    -fx-opacity: 0.75;
+}
+
+.boutondash:armed{
+    -fx-text-fill:white;
+     -fx-background-color: #ffcf03;
+    -fx-background-radius: 0px;
+    -fx-opacity: 1;
+    -fx-background-image: url("../IMAGES/dashohover.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-attachment: scroll;
+    -fx-background-position: center top;
+    -fx-background-clip: border-box;
+    -fx-background-origin: padding-box;
+    -fx-background-size: auto auto;
+    
+}
+
+.ajouter{
+    -fx-text-fill:#ffcf03;
+    -fx-background-color: #75614b;
+    -fx-background-radius: 0 0 0 0;
+    -fx-font:15px Tahoma; 
+    -fx-background-image: url("../IMAGES/direct.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-attachment: scroll;
+    -fx-background-position: 200 19;
+    -fx-background-clip: border-box;
+    -fx-background-origin: padding-box;
+    -fx-background-size: 15px 15px; 
+    -fx-border-color:#75614b;
+}
+
+.fonddasho{
+    -fx-background-color: #F6F3BD;
+}
+
+.trans{
+    -fx-background-color: transparent;
+}

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="fonddasho" stylesheets="@../CSS/Dash.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.govoyage.GUI.InscriptionutilController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffffff00" height="280.0" layoutX="153.0" layoutY="50.0" stroke="#974925ab" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeType="OUTSIDE" strokeWidth="3.0" width="291.0" />
+      <TextField fx:id="nom" layoutX="263.0" layoutY="69.0" promptText="nom" />
+      <TextField fx:id="prenom" layoutX="263.0" layoutY="119.0" promptText="prenom" />
+      <TextField fx:id="email" layoutX="263.0" layoutY="168.0" promptText="email" />
+      <TextField fx:id="username" layoutX="263.0" layoutY="213.0" promptText="username" />
+      <TextField fx:id="password" layoutX="263.0" layoutY="264.0" promptText="password" />
+      <Button fx:id="enregistrer" layoutX="253.0" layoutY="347.0" mnemonicParsing="false" onAction="#btnEnregistreraction" styleClass="ajouter" text="enregistrer" />
+      <Button fx:id="accueil" layoutY="-1.0" mnemonicParsing="false" onAction="#accueilAction" prefHeight="40.0" prefWidth="110.0" styleClass="ajouter" text="Home" />
+      <ImageView fitHeight="45.0" fitWidth="46.0" layoutX="191.0" layoutY="158.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../IMAGES/email.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="45.0" fitWidth="46.0" layoutX="191.0" layoutY="254.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../IMAGES/password.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="45.0" fitWidth="46.0" layoutX="191.0" layoutY="203.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../IMAGES/user.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="45.0" fitWidth="46.0" layoutX="191.0" layoutY="82.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../IMAGES/user.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

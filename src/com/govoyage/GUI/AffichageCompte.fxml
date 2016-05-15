@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="fonddasho" stylesheets="@../CSS/Dash.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.govoyage.GUI.AffichageCompteController">
+   <children>
+      <Button fx:id="modifier" layoutX="156.0" layoutY="280.0" mnemonicParsing="false" onAction="#ModifierAction" prefHeight="37.0" prefWidth="111.0" styleClass="ajouter" text="modifier" />
+      <Button fx:id="supprimer" layoutX="324.0" layoutY="280.0" mnemonicParsing="false" onAction="#DeleteAction" prefHeight="37.0" prefWidth="111.0" styleClass="ajouter" text="supprimer" />
+      <Label fx:id="nomlabel" layoutX="213.0" layoutY="82.0" text="nom">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Label>
+      <Label fx:id="prenomlabel" layoutX="213.0" layoutY="127.0" text="prenom">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Label>
+      <Label fx:id="emaillabel" layoutX="213.0" layoutY="172.0" text="email">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Label>
+      <Label fx:id="usernamelabel" layoutX="212.0" layoutY="224.0" text="username">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Label>
+      <Button layoutX="320.0" layoutY="345.0" mnemonicParsing="false" onAction="#btnDownloadAction" prefHeight="31.0" prefWidth="111.0" styleClass="ajouter" text="Download" />
+      <Label fx:id="nom" layoutX="320.0" layoutY="82.0" prefHeight="17.0" prefWidth="135.0" text="Label" />
+      <Label fx:id="username" layoutX="320.0" layoutY="224.0" prefHeight="17.0" prefWidth="135.0" text="Label" />
+      <Label fx:id="prenom" layoutX="320.0" layoutY="127.0" prefHeight="17.0" prefWidth="135.0" text="Label" />
+      <Label fx:id="email" layoutX="320.0" layoutY="172.0" prefHeight="17.0" prefWidth="135.0" text="Label" />
+      <ImageView fitHeight="182.0" fitWidth="150.0" layoutX="6.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../IMAGES/people.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="156.0" layoutY="345.0" mnemonicParsing="false" onAction="#Home" prefHeight="31.0" prefWidth="111.0" styleClass="ajouter" text="accueil" />
+   </children>
+</AnchorPane>

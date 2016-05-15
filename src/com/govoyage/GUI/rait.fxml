@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.govoyage.GUI.RaitController">
+   <children>
+      <ImageView fx:id="etoileoff1" fitHeight="36.0" fitWidth="69.0" layoutX="143.0" layoutY="174.0" onMouseClicked="#etoileon1MouseReleased" onMouseEntered="#etoileoff1MouseMoved" onMouseReleased="#etoileon1MouseReleased" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Ressources/etoileOff.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="etoileoff5" fitHeight="36.0" fitWidth="69.0" layoutX="253.0" layoutY="174.0" onMouseClicked="#etoileon5MouseReleased" onMouseEntered="#etoileoff5MouseMoved" onMouseReleased="#etoileon5MouseReleased" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Ressources/etoileOff.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="etoileoff4" fitHeight="36.0" fitWidth="69.0" layoutX="225.0" layoutY="174.0" onMouseClicked="#etoileon4MouseReleased" onMouseEntered="#etoileoff4MouseMoved" onMouseReleased="#etoileon4MouseReleased" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Ressources/etoileOff.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="etoileoff2" fitHeight="36.0" fitWidth="69.0" layoutX="170.0" layoutY="174.0" onMouseClicked="#etoileon2MouseReleased" onMouseEntered="#etoileoff2MouseMoved" onMouseReleased="#etoileon2MouseReleased" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Ressources/etoileOff.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="etoileoff3" fitHeight="36.0" fitWidth="69.0" layoutX="198.0" layoutY="174.0" onMouseClicked="#etoileon3MouseReleased" onMouseEntered="#etoileoff3MouseMoved" onMouseReleased="#etoileon3MouseReleased" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Ressources/etoileOff.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="etoileon2" fitHeight="36.0" fitWidth="150.0" layoutX="170.0" layoutY="174.0" onMouseClicked="#etoileon2MouseReleased" onMouseEntered="#etoileon2MouseMoved" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Ressources/etoileOn.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="etoileon1" fitHeight="36.0" fitWidth="150.0" layoutX="143.0" layoutY="174.0" onMouseClicked="#etoileon1MouseReleased" onMouseEntered="#etoileon1MouseMoved" onMouseReleased="#etoileon1MouseReleased" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Ressources/etoileOn.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="etoileon4" fitHeight="36.0" fitWidth="150.0" layoutX="225.0" layoutY="174.0" onMouseClicked="#etoileon4MouseReleased" onMouseEntered="#etoileon4MouseMoved" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Ressources/etoileOn.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="etoileon3" fitHeight="36.0" fitWidth="150.0" layoutX="198.0" layoutY="174.0" onMouseClicked="#etoileon3MouseReleased" onMouseEntered="#etoileon3MouseMoved" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Ressources/etoileOn.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="etoileon5" fitHeight="36.0" fitWidth="150.0" layoutX="253.0" layoutY="174.0" onMouseClicked="#etoileon5MouseReleased" onMouseEntered="#etoileon5MouseMoved" onMouseReleased="#etoileon5MouseReleased" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Ressources/etoileOn.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

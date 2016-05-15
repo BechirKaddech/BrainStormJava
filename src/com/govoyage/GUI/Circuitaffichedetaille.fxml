@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.web.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.media.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="680.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.govoyage.GUI.CircuitaffichedetailleController">
+   <children>
+      <GridPane prefHeight="680.0" prefWidth="1280.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="261.0" minHeight="0.0" prefHeight="48.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="454.0" minHeight="10.0" prefHeight="85.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="563.0" minHeight="10.0" prefHeight="547.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <HBox prefHeight="100.0" prefWidth="200.0" styleClass="top" stylesheets="@../CSS/Home.css">
+               <children>
+                  <Pane prefHeight="48.0" prefWidth="1280.0">
+                     <children>
+                        <Pane layoutX="898.0" prefHeight="48.0" prefWidth="171.0" styleClass="bareheure" stylesheets="@../CSS/Home.css">
+                           <children>
+                              <Label layoutX="54.0" layoutY="6.0" styleClass="texttime" text="TUNISIE" textFill="#c31616" />
+                              <Label id="time" fx:id="timerLabel" layoutX="54.0" layoutY="15.0" prefHeight="2.0" prefWidth="42.0" text="15:50" textFill="#f5f4f4">
+                                 <padding>
+                                    <Insets left="3.0" top="4.0" />
+                                 </padding>
+                              </Label>
+                              <ImageView fitHeight="40.0" fitWidth="60.0" layoutX="113.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../IMAGES/weaher.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </Pane>
+                        <ImageView fitHeight="12.0" fitWidth="16.0" layoutX="1075.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../IMAGES/fr.gif" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="12.0" fitWidth="16.0" layoutX="1075.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../IMAGES/ch.gif" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="755.0" layoutY="6.0" prefHeight="29.0" prefWidth="136.0" styleClass="numero" text="0825 822 295" textFill="#c61f1f" />
+                        <Label layoutX="766.0" layoutY="20.0" prefHeight="17.0" prefWidth="114.0" styleClass="numerotexto" text="du lundi au samedi">
+                           <padding>
+                              <Insets top="4.0" />
+                           </padding>
+                        </Label>
+                        <ImageView fitHeight="36.0" fitWidth="42.0" layoutX="722.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../IMAGES/tel.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </Pane>
+               </children></HBox>
+            <HBox prefHeight="100.0" prefWidth="200.0" styleClass="baro2" stylesheets="@../CSS/Home.css" GridPane.rowIndex="1">
+               <children>
+                  <HBox prefHeight="85.0" prefWidth="986.0" styleClass="baroint" stylesheets="@../CSS/Home.css">
+                     <HBox.margin>
+                        <Insets left="225.0" />
+                     </HBox.margin>
+                     <children>
+                        <Pane prefHeight="200.0" prefWidth="250.0" styleClass="int2" stylesheets="@../CSS/Home.css">
+                           <HBox.margin>
+                              <Insets left="-200.0" />
+                           </HBox.margin>
+                           <children>
+                              <Button id="logo" alignment="BOTTOM_CENTER" layoutY="2.0" mnemonicParsing="false" onAction="#Acceuil" prefHeight="84.0" prefWidth="232.0" styleClass="logo" stylesheets="@../CSS/Home.css" />
+                           </children>
+                        </Pane>
+                        <HBox prefHeight="75.0" prefWidth="607.0" styleClass="int2">
+                           <HBox.margin>
+                              <Insets top="10.0" />
+                           </HBox.margin>
+                           <children>
+                              <Pane prefHeight="84.0" prefWidth="57.0" styleClass="int2">
+                                 <HBox.margin>
+                                    <Insets left="-14.0" />
+                                 </HBox.margin>
+                              </Pane>
+                              <Button id="boto" alignment="BOTTOM_CENTER" mnemonicParsing="false" onAction="#Vol" prefHeight="84.0" prefWidth="55.0" styleClass="boto" text="VOLS">
+                                 <HBox.margin>
+                                    <Insets left="-57.0" />
+                                 </HBox.margin>
+                              </Button>
+                              <Pane prefHeight="84.0" prefWidth="67.0" styleClass="int2" />
+                              <Button id="bouttonhotel" alignment="BOTTOM_CENTER" mnemonicParsing="false" onAction="#Hotel" prefHeight="84.0" prefWidth="65.0" styleClass="boto" text="HÔTELS">
+                                 <HBox.margin>
+                                    <Insets left="-65.0" />
+                                 </HBox.margin>
+                              </Button>
+                              <Pane prefHeight="200.0" prefWidth="86.0" styleClass="int2" />
+                              <Button id="bouttonsejour" alignment="BOTTOM_CENTER" mnemonicParsing="false" onAction="#Sejour" prefHeight="84.0" prefWidth="84.0" styleClass="boto" text="SËJOURS">
+                                 <HBox.margin>
+                                    <Insets left="-86.0" />
+                                 </HBox.margin>
+                              </Button>
+                              <Pane prefHeight="84.0" prefWidth="75.0" styleClass="int2" />
+                              <Button id="bouttoncircuit" alignment="BOTTOM_CENTER" mnemonicParsing="false" prefHeight="84.0" prefWidth="73.0" styleClass="boto" text="CIRCUITS">
+                                 <HBox.margin>
+                                    <Insets left="-73.0" />
+                                 </HBox.margin>
+                              </Button>
+                              <Pane prefHeight="84.0" prefWidth="77.0" styleClass="int2" />
+                              <Button id="bouttonville" alignment="BOTTOM_CENTER" mnemonicParsing="false" onAction="#Ville" prefHeight="84.0" prefWidth="75.0" styleClass="boto" text="VILLES">
+                                 <HBox.margin>
+                                    <Insets left="-77.0" />
+                                 </HBox.margin>
+                              </Button>
+                              <Pane prefHeight="84.0" prefWidth="164.0" styleClass="int2" />
+                              <Button id="bouttonvoiture" alignment="BOTTOM_CENTER" mnemonicParsing="false" onAction="#Voiture" prefHeight="84.0" prefWidth="162.0" styleClass="boto" text="LOCATION VOITURE">
+                                 <HBox.margin>
+                                    <Insets left="-162.0" />
+                                 </HBox.margin>
+                              </Button>
+                              <Button id="bouttonforum" alignment="BOTTOM_CENTER" mnemonicParsing="false" onAction="#Forum" prefHeight="75.0" prefWidth="85.0" styleClass="boto" text="FORUM" />
+                           </children>
+                        </HBox>
+                     </children>
+                     <padding>
+                        <Insets left="200.0" />
+                     </padding>
+                  </HBox>
+               </children>
+            </HBox>
+            <Pane prefHeight="200.0" prefWidth="200.0" stylesheets="@../CSS/Home.css" GridPane.rowIndex="2">
+               <children>
+                  <Pane layoutY="503.0" prefHeight="44.0" prefWidth="1280.0" styleClass="bas">
+                     <children>
+                        <TextField fx:id="chamnews" layoutX="878.0" layoutY="6.0" prefHeight="32.0" prefWidth="239.0" styleClass="mailnewsfiled" />
+                        <Button layoutX="1117.0" layoutY="6.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="104.0" styleClass="mailnewsbut" text="S'inscrire" />
+                        <ImageView fitHeight="29.0" fitWidth="25.0" layoutX="844.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../IMAGES/black.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="32.0" fitWidth="55.0" layoutX="510.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../IMAGES/certificat.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="38.0" fitWidth="155.0" layoutX="565.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../IMAGES/secure.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="35.0" fitWidth="36.0" layoutX="39.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../IMAGES/picture.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="35.0" fitWidth="36.0" layoutX="81.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../IMAGES/twit.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="35.0" fitWidth="36.0" layoutX="122.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../IMAGES/app.png" />
+                           </image>
+                        </ImageView>
+                     </children></Pane>
+                  <Pane prefHeight="503.0" prefWidth="1280.0" styleClass="fond" stylesheets="@../CSS/Home.css">
+                     <children>
+                        <WebView fx:id="web" layoutX="674.0" layoutY="61.0" prefHeight="401.0" prefWidth="561.0" />
+                        <Label fx:id="nomcircuit" layoutX="176.0" layoutY="6.0" prefHeight="30.0" prefWidth="280.0" text="non circuit" />
+                        <Button layoutX="873.0" layoutY="21.0" mnemonicParsing="false" onAction="#tracer" prefHeight="25.0" prefWidth="164.0" text="AFFICHER ITINAIRAIRE" />
+                        <ImageView fx:id="top" fitHeight="237.0" fitWidth="519.0" layoutX="57.0" layoutY="34.0" pickOnBounds="true">
+                           <image>
+                              <Image url="@../IMAGES/fondos.jpeg" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="77.0" layoutY="300.0" text="1ere   Destination: " />
+                        <Label layoutX="77.0" layoutY="363.0" text="2eme Destination: " />
+                        <Label layoutX="77.0" layoutY="422.0" text="3eme Destination: " />
+                        <Label layoutX="95.0" layoutY="330.0" text="Description:" />
+                        <Label layoutX="95.0" layoutY="391.0" text="Description:" />
+                        <Label layoutX="95.0" layoutY="449.0" text="Description:" />
+                        <Label fx:id="dest1" layoutX="185.0" layoutY="300.0" prefHeight="17.0" prefWidth="136.0" text="dest1" />
+                        <Label fx:id="dest2" layoutX="185.0" layoutY="363.0" prefHeight="17.0" prefWidth="136.0" text="dest2" />
+                        <Label fx:id="dest3" layoutX="185.0" layoutY="422.0" prefHeight="17.0" prefWidth="136.0" text="dest3" />
+                        <Label fx:id="desc1" layoutX="162.0" layoutY="330.0" prefHeight="17.0" prefWidth="470.0" text="desc1" />
+                        <Label fx:id="desc2" layoutX="162.0" layoutY="392.0" prefHeight="17.0" prefWidth="470.0" text="desc2" />
+                        <Label fx:id="desc3" layoutX="162.0" layoutY="442.0" prefHeight="35.0" prefWidth="470.0" text="desc3" />
+                        <ImageView fx:id="destina1" fitHeight="48.0" fitWidth="57.0" layoutX="14.0" layoutY="276.0" pickOnBounds="true" preserveRatio="true" />
+                        <Label fx:id="degre1" layoutX="22.0" layoutY="322.0" prefHeight="17.0" prefWidth="55.0" text="degre1" />
+                        <ImageView fx:id="destina2" fitHeight="48.0" fitWidth="57.0" layoutX="14.0" layoutY="339.0" pickOnBounds="true" preserveRatio="true" />
+                        <Label fx:id="degre2" layoutX="22.0" layoutY="384.0" prefHeight="17.0" prefWidth="55.0" text="degre2" />
+                        <ImageView fx:id="destina3" fitHeight="48.0" fitWidth="57.0" layoutX="14.0" layoutY="407.0" pickOnBounds="true" preserveRatio="true" />
+                        <Label fx:id="degre3" layoutX="22.0" layoutY="451.0" prefHeight="17.0" prefWidth="55.0" text="degre3" />
+                     </children></Pane>
+               </children>
+            </Pane>
+            <Pane prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <MenuButton alignment="CENTER" layoutX="1106.0" layoutY="1.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="174.0" styleClass="identif" stylesheets="@../CSS/Home.css" text="S'identifier" textFill="WHITE">
+                    <items>
+                      <MenuItem mnemonicParsing="false" text="parametre compte" />
+                      <MenuItem mnemonicParsing="false" text="Action 2" />
+                    </items>
+                  </MenuButton>
+               </children>
+            </Pane>
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="542.0" styleClass="fonddasho" stylesheets="@../CSS/Dash.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.govoyage.GUI.LoginController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffffff00" height="219.0" layoutX="105.0" layoutY="83.0" stroke="#d7c153ab" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeType="OUTSIDE" strokeWidth="3.0" width="333.0" />
+      <TextField fx:id="username" layoutX="173.0" layoutY="117.0" prefHeight="35.0" prefWidth="225.0" promptText="username" />
+      <Button fx:id="login" layoutX="172.0" layoutY="232.0" mnemonicParsing="false" onAction="#btnloginaction" prefHeight="35.0" prefWidth="99.0" styleClass="ajouter" text="login" textAlignment="CENTER" />
+      <Button fx:id="accueil" layoutX="299.0" layoutY="232.0" mnemonicParsing="false" onAction="#Home" prefHeight="35.0" prefWidth="99.0" styleClass="ajouter" text="accueil" />
+      <ImageView fitHeight="55.0" fitWidth="55.0" layoutX="116.0" layoutY="155.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../IMAGES/password.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="118.0" layoutY="110.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../IMAGES/user.png" />
+         </image>
+      </ImageView>
+      <PasswordField fx:id="password" layoutX="173.0" layoutY="165.0" prefHeight="35.0" prefWidth="225.0" promptText="password" />
+   </children>
+</AnchorPane>

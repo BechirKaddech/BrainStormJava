@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="800.0" styleClass="fonddasho" stylesheets="@../CSS/Dash.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.govoyage.GUI.AjouterVolController">
+    <children>
+        <Label layoutX="335.0" layoutY="14.0" prefHeight="30.0" prefWidth="128.0" text="AJOUT VOL" textFill="#653c3c">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+        <Label layoutX="262.0" layoutY="91.0" prefHeight="30.0" prefWidth="95.0" text="Nom Compagnie" />
+        <Label layoutX="264.0" layoutY="144.0" text="Ville Depart" />
+        <Label layoutX="263.0" layoutY="200.0" prefHeight="17.0" prefWidth="64.0" text="Ville Arrivee" />
+        <Label layoutX="262.0" layoutY="249.0" text="Date Depart" />
+        <Label layoutX="262.0" layoutY="303.0" text="Date Arrivee" />
+        <Label layoutX="262.0" layoutY="356.0" text="Nom Aeroport" />
+        <TextField fx:id="nomCompagnie" layoutX="389.0" layoutY="91.0" styleClass="stuletextfiledcircuit" />
+      
+        <DatePicker fx:id="dateDepart" layoutX="389.0" layoutY="245.0" styleClass="stuletextfiledcircuit" />
+        <DatePicker fx:id="dateArrivee" layoutX="389.0" layoutY="299.0" styleClass="stuletextfiledcircuit" />
+        <TextField fx:id="nomAeroport" layoutX="389.0" layoutY="352.0" styleClass="stuletextfiledcircuit" />
+        <Button layoutX="342.0" layoutY="449.0" mnemonicParsing="false" onAction="#AjouterVol" prefHeight="30.0" prefWidth="113.0" styleClass="ajouter" text="Ajouter" />
+      <ComboBox fx:id="villeDepart" layoutX="389.0" layoutY="140.0" prefWidth="150.0" styleClass="combocircuit" />
+      <ComboBox fx:id="villeArrivee" layoutX="389.0" layoutY="183.0" prefWidth="150.0" styleClass="combocircuit" />
+      <Button alignment="BOTTOM_CENTER" mnemonicParsing="false" onAction="#dasho" prefHeight="49.0" prefWidth="149.0" styleClass="boutondash" text="Dashboard" />
+      <TextField fx:id="prixVol" layoutX="390.0" layoutY="403.0" styleClass="stuletextfiledcircuit" />
+      <Label layoutX="262.0" layoutY="407.0" text="Prix Vol" />
+    </children>
+</AnchorPane>

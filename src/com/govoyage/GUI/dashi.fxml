@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="680.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.govoyage.GUI.DashiController">
+   <children>
+      <Pane layoutY="7.0" prefHeight="400.0" prefWidth="600.0" styleClass="fonddasho" stylesheets="@../CSS/Dash.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <MenuButton id="statistic" alignment="CENTER" layoutY="95.0" mnemonicParsing="false" popupSide="LEFT" prefHeight="65.0" prefWidth="247.0" styleClass="menubouton" text="Statistiques" textFill="#fffdfd">
+               <items>
+                  <MenuItem fx:id="showStats" mnemonicParsing="false" onAction="#viewStats" text="Type de données" />
+                  <MenuItem fx:id="showStat2" mnemonicParsing="false" onAction="#viewStat2" text="Langue et Pays" />
+               </items>
+            </MenuButton>
+            <ListView fx:id="showPane" layoutX="332.0" layoutY="104.0" prefHeight="488.0" prefWidth="880.0" />
+            <Button id="acceuille" mnemonicParsing="false" onAction="#Acceuil" prefHeight="93.0" prefWidth="247.0" styleClass="acceuille" text="ACCEUIL" />
+            <Button id="reclam" layoutY="160.0" mnemonicParsing="false" onAction="#Forum" prefHeight="65.0" prefWidth="247.0" styleClass="menubouton" text="Gestion Reclamation" textFill="WHITE" />
+            <Button id="vol" layoutY="225.0" mnemonicParsing="false" onAction="#Vol" prefHeight="65.0" prefWidth="247.0" styleClass="menubouton" text="Gestion Vol" textFill="WHITE" />
+            <Button id="hotel" layoutY="290.0" mnemonicParsing="false" onAction="#Hotel" prefHeight="65.0" prefWidth="247.0" styleClass="menubouton" text="Gestion Hôtel" textFill="WHITE" />
+            <Button id="circuit" layoutY="355.0" mnemonicParsing="false" onAction="#circuit" prefHeight="65.0" prefWidth="247.0" styleClass="menubouton" text="Gestion Circuit" textFill="WHITE" />
+            <Button id="ville" layoutY="420.0" mnemonicParsing="false" onAction="#Ville" prefHeight="65.0" prefWidth="247.0" styleClass="menubouton" text="Gestion Ville" textFill="WHITE" />
+            <Button id="sejour" layoutY="485.0" mnemonicParsing="false" onAction="#Sejour" prefHeight="65.0" prefWidth="247.0" styleClass="menubouton" text="Gestion Sejour" textFill="WHITE" />
+            <Button id="voiture" layoutY="550.0" mnemonicParsing="false" onAction="#Voiture" prefHeight="65.0" prefWidth="247.0" styleClass="menubouton" text="Gestion Voiture" textFill="WHITE" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

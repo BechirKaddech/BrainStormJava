@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="650.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.govoyage.GUI.FXMLAdminReclamationController">
+   <children>
+      <SplitPane dividerPositions="0.29797979797979796" layoutX="110.0" layoutY="150.0" prefHeight="452.0" prefWidth="818.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <ListView fx:id="l1" onMouseClicked="#ShowReclamation" prefHeight="452.0" prefWidth="240.0" />
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="450.0" prefWidth="652.0">
+               <children>
+                  <Label fx:id="l2" layoutX="14.0" layoutY="14.0" prefHeight="46.0" prefWidth="422.0" textFill="#570606">
+                     <font>
+                        <Font name="High Tower Text" size="55.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="l3" layoutX="21.0" layoutY="116.0" prefHeight="135.0" prefWidth="447.0">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="l4" layoutX="14.0" layoutY="307.0" prefHeight="81.0" prefWidth="324.0" textFill="#25085b">
+                     <font>
+                        <Font size="28.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="l5" layoutX="14.0" layoutY="80.0" prefHeight="36.0" prefWidth="369.0">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <ImageView fx:id="i1" fitHeight="100.0" fitWidth="131.0" layoutX="244.0" layoutY="323.0" pickOnBounds="true" preserveRatio="true" />
+               </children></AnchorPane>
+        </items>
+      </SplitPane>
+      <Button layoutX="960.0" layoutY="189.0" mnemonicParsing="false" onAction="#validerReclamation" prefHeight="70.0" prefWidth="192.0" stylesheets="@../CSS/test.css" text="Valider">
+         <styleClass>
+            <String fx:value="ipad-grey" />
+            <String fx:value="okk" />
+         </styleClass></Button>
+      <Button layoutX="959.0" layoutY="283.0" mnemonicParsing="false" onAction="#EnCoursReclamation" prefHeight="62.0" prefWidth="192.0" stylesheets="@../CSS/test.css" text="En cours">
+         <styleClass>
+            <String fx:value="ipad-grey" />
+            <String fx:value="encours" />
+         </styleClass></Button>
+      <Button layoutX="955.0" layoutY="376.0" mnemonicParsing="false" onAction="#removeR" prefHeight="62.0" prefWidth="192.0" stylesheets="@../CSS/test.css" text="Supprimer">
+         <styleClass>
+            <String fx:value="ipad-grey" />
+            <String fx:value="remove" />
+         </styleClass>
+      </Button>
+      <Button alignment="CENTER" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#ShowD" prefHeight="81.0" prefWidth="223.0" styleClass="boutondash" stylesheets="@../CSS/Dash.css" text="DashBoard" />
+      <Button layoutX="983.0" layoutY="560.0" mnemonicParsing="false" onAction="#ShowI" styleClass="ipad-grey" stylesheets="@../CSS/test.css" text="Forum" />
+      <Label layoutX="390.0" layoutY="14.0" prefHeight="108.0" prefWidth="358.0" text="Gestion Réclamation" textFill="#e40808">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
